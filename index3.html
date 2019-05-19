@@ -1,0 +1,239 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+
+<style>
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+    border:black .05px solid;
+}
+
+.btn{
+    background: pink;
+    text-decoration:none;
+}
+
+
+
+.main-nav ul{
+    display:grid;
+    list-style:none;
+    grid-gap:20px;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+}
+
+.main-nav li{
+    text-align: center;
+    padding:1rem;
+}
+
+.container{
+    width:90%;
+    margin:auto;
+}
+
+.main-nav{
+    margin-top:30px;
+    margin-bottom:30px;
+}
+
+.top-container{
+    margin-bottom:20px;
+    background-color: grey;
+    text-align: center;
+    display:grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-column-gap: 1%;
+    grid-row-gap:1%;
+    grid-auto-rows:200px;
+    
+}
+
+.simple-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    grid-gap:1em;
+    grid-auto-rows:minmax(auto,auto);
+    
+}
+
+.need-center-withgrid{
+    display: grid;
+    place-items: center;
+}
+
+.need-center-withfex{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+
+.nested{
+    display:grid;
+    place-items: center;
+    grid-template-columns:1fr;
+    grid-gap:1em;
+    grid-auto-rows:minmax(auto,auto);
+}
+
+.same-nav{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 6fr;
+    place-items: center;
+    grid-gap:1em;
+    grid-auto-rows:minmax(auto,auto);
+}
+
+.box-small{
+    display: grid;
+    place-items: center;
+}
+
+</style>
+
+
+<body>
+
+    <div class="container">
+        <main class="main-nav">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Service</li>
+                <li>Contact</li> 
+            </ul>
+        </main>
+    </div>
+
+
+    <section class="top-container container">
+        
+            <div class="need-center-withgrid">
+              <div class="nested">
+                <p>Velit adipisicing in in minim sunt suvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvnt.</p>
+                <p>Velit adipisicing in in minim sunt sunt.</p>
+                <p>Velit adipisicing in in minim sunt sunt.</p>
+              </div>
+            </div>
+
+            <div class="need-center-withgrid">
+                <i class="fas fa-globe fa-4x"></i>
+                <h2>MMMM</h2>
+            </div>
+
+            <div class="need-center-withfex">
+                    <h4>Pro Membership</h4>
+                    <p class="price">$299/month</p>
+                    <a href="" class="btn">Buy Now</a>
+            </div>
+
+    </section>
+
+    <section class="simple-grid container">
+        
+            <div class="need-center-withgrid">
+               
+                <p>Dolore occaecat nisi nisi minim esse non do ipsum non. Cillum veniam anim Lorem veniam et anim </p>
+           
+            </div>
+            <div class="need-center-withgrid">
+                    <p>Dolore occaecat nisi nisi minim esse non do ipsum non. Cillum veniam anim Lorem veniam et anim Labore occaecat ipsum aliqua duis deserunt nulla Lorem commodo sunt elit amet consectetur eu. Commodo quis enim qui dolore laboris cupidatat quis adipisicing qui ipsum occaecat aute magna labore. Quis aliqua in aliquip eiusmod. </p>            
+              
+            </div>
+            <div class="need-center-withgrid">
+                    <p>Dolore occaecat nisi nisi minim esse non do ipsum non. Cillum veniam anim Lorem veniam et anim </p>
+            </div>
+
+            <div class="need-center-withgrid">
+               
+                    <p>Dolore occaecat nisi nisi minim esse non do ipsum non. Cillum veniam anim Lorem veniam et anim </p>
+               
+                </div>
+                <div class="need-center-withgrid">
+                        <p>Dolore occaecat nisi nisi minim esse non do ipsum non. Cillum veniam anim Lorem veniam et anim </p>            
+                  
+                </div>
+                <div class="need-center-withgrid">
+                        <p>Dolore occaecat nisi nisi minim esse non do ipsum non. Cillum veniam anim Lorem veniam et anim </p>
+                </div>
+    </section>
+
+    <section class="boxes">
+        <div class="same-nav">
+            <div class="box-small">
+                <i class="fas fa-chart-pie fa-2x"></i>
+                <h5>Analytics</h5>
+            </div>
+    
+            <div class="box-small">
+                    <i class="fas fa-globe fa-2x"></i>
+                    <h5>Planning</h5>
+            </div>
+            <div class="box-small">
+                    <i class="fas fa-globe fa-2x"></i>
+                    <h5>Planning</h5>
+            </div>
+        </div>
+       
+    </section>
+
+    <section class="boxes">
+            <div class="box">
+                <i class="fas fa-globe fa-4x"></i>
+                <h3>Planning</h3>
+                <p>Proident laboris deserunt ipsum pariatur deserunt aliquip. Dolore adipisicing ad consequat </p>
+            </div>
+    </section>
+
+    <section class="boxes">
+            <div class="box">
+                <i class="fas fa-cog fa-4x"></i>
+                <h3>Marketing</h3>
+                <p>Proident laboris deserunt ipsum pariatur deserunt aliquip. Dolore adipisicing ad consequat </p>
+            </div>
+    </section>
+
+    <section class="boxes">
+            <div class="box">
+                <i class="fas fa-user fa-4x"></i>
+                <h3>Support</h3>
+                <p>Proident laboris deserunt ipsum pariatur deserunt aliquip. Dolore adipisicing ad consequat </p>
+            </div>
+    </section>
+
+    <section class="info">
+        <img src="img/city.jpg" alt="">
+    </section>
+    <div>
+        <h2>aaaaaaaaaaaaa</h2>
+        <p>Anim tempor officia nostrud enim do in ullamco eiusmod.Elit sit nostrud quis eiusmod veniam culpa. Officia pariatur culpa id ipsum est aliquip it proident sunt.</p>
+        <a href="" class="btn"></a>
+    </div>
+
+    <section class="portfolio">
+        <img src="https://source.unsplash.com/random/200x200" alt="">
+        <img src="https://source.unsplash.com/random/201x200" alt="">
+        <img src="https://source.unsplash.com/random/202x200" alt="">
+        <img src="https://source.unsplash.com/random/203x200" alt="">
+        <img src="https://source.unsplash.com/random/202x200" alt="">
+        <img src="https://source.unsplash.com/random/201x200" alt="">
+        <img src="https://source.unsplash.com/random/203x200" alt="">
+        <img src="https://source.unsplash.com/random/202x200" alt="">
+    </section>
+
+    <footer>
+        <p>Grid &copy; 2018</p>
+    </footer>
+
+</body>
+</html>

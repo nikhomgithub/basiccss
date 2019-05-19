@@ -1,0 +1,206 @@
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Acme Web design | Welcome</title>
+    
+      <style>
+      *{
+        margin:0;
+        padding:0;
+        border:.1px black solid;
+        font-family:arial;
+      }
+
+      .container{
+        width:80%;
+        margin:auto;
+      }
+
+      header{
+        padding-top:30px;
+        min-height:70px;
+      }
+
+      header a{
+        font-size:1rem;
+      }
+
+      header li{
+        display:inline;
+        padding:0 1.5rem 0 1.5rem;
+      }
+
+      header #branding{
+        float:left;
+      }
+
+      header nav{
+        float:right;
+        margin-top:.8rem;
+      }
+
+      #showcase{
+        min-height:400px;
+        text-align:center;
+        background-color: grey;
+      }
+
+      #showcase h1{
+        margin-top:100px;
+        font-size:3rem;  
+        margin-bottom:20px;
+      }
+
+      #showcase p{
+        font-size:1.1rem;
+      }
+
+
+      #newsletter{
+        margin-top:1.2rem;
+        margin-bottom:1.5rem;
+      }
+
+      #newsletter h1{
+        float:left;
+      }
+      #newsletter form{
+        float:right;
+        margin-top:10px
+      }
+
+      #newsletter input[type="email"]{
+        padding:4px;
+        height:30px;
+        width:250px;
+      }
+      
+      #boxes{
+        margin-top:40px;
+        background-color: grey;
+      }
+
+      #boxes .box{
+        text-align:center;
+        width:33.3%;
+        float:left;
+        box-sizing:border-box;
+        padding:10px;
+      }
+      #boxes .box img{
+        width:90px;
+      }
+
+      .clr{
+        clear:both;
+      }
+
+      footer{
+        position:relative;
+        bottom:0px;
+
+        text-align:center;
+      }
+
+      .p_box{
+        margin:auto;
+        width:800px;
+        height:300px;
+        position:relative;
+      }
+
+      .fix-me{
+        position:fixed;
+        top:500px;
+      }
+
+      .relative-me{
+        position:absolute;
+        bottom:10px;
+        left:10px;
+      }
+      </style>  
+    
+    </head>
+
+    <body>
+      <header>
+        <div class="container">
+          <div id="branding">
+            <h1>Header</h1>
+          </div>
+
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a> </li>
+              <li><a href="about.html">About</a> </li>
+              <li><a href="services.html">Services</a> </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <section id="showcase">
+        <div class="container">
+          <h1>Showcase</h1>
+          <p>Sint pariatur sit non eiusmod do laborum adipisicing excepteur adipisicing consectetur ipsum. Nostrud Lorem in aliqua dolore ut cillum </p>
+        </div>
+      </section>
+
+      <section id="newsletter">
+        <div class="container">
+          <h1>Newsletter</h1>
+          <form action="">
+            <input type="email" placeholder="Enter Email">
+            <button type="submit" class="button_1">Subcribe</button>
+          </form>
+        </div>
+        <div class="clr"></div>
+      </section>
+
+
+      <section id="boxes">
+        <div class="container">
+
+          <div class="box">
+            <img src="img/logo_html.png" alt="">
+            <h3>HTM5 Markup</h3>
+            <p>Ullamco ullamco in aute aute duis consectetur et sit sit.</p>
+          </div>
+
+          <div class="box">
+            <img src="img/logo_css.png" alt="">
+            <h3>CSS3 Styleing</h3>
+            <p>Ullamco ullamco in aute aute duis consectetur et sit sit.</p>
+          </div>
+
+          <div class="box">
+            <img id="g_d"src="img/logo_brush.png" alt="">
+            <h3> Design sss</h3>
+            <p>Ullamco ullamco in aute aute duis consectetur et sit sit.</p>
+          </div>
+          
+          <div class="clr"></div>
+        </div>
+      </section>
+
+      <div class="p_box">
+        <h1 class="hello">Hello</h1>
+        <p>Sit mollit reprehenderit ullamco excepteur duis. Eiusmod amet minim est exercitation. Anim et adipisicing consequat proident tempor sit mollit eiusmod velit commodo nostrud. Aliqua est irure duis minim. Ullamco reprehenderit in duis ipsum reprehenderit ad ullamco veniam aliquip duis. In nisi aliquip deserunt laborum sunt do sunt.</p>
+        <a class="relative-me" type="button">Hello</a>
+      </div>
+     
+      <div>
+          <a class="fix-me" type="button">Hello</a>
+      </div>
+
+
+      <footer>
+        <p>Footer &copy; 2019</p>
+      </footer>
+
+
+    </body>
+</html>   

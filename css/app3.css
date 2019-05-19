@@ -1,0 +1,86 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    border:0.1px black solid
+}
+
+.container{
+    width:80%;
+    margin:auto;
+}
+
+.block{
+    float:left;
+    width: 33.3%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.clr{
+    clear:both;
+}
+
+.fixme{
+    position:fixed;
+    top:30px;
+    left:30px;
+}
+
+.main-block{
+    float:left;
+    width:70%;
+    box-sizing: border-box;
+    padding:10px;
+}
+
+.side-bar{
+    float:right;
+    width:30%;
+    box-sizing: border-box;
+    padding:10px;
+}
+
+.grid-box{
+    margin-top:20px;
+    min-height:400px;
+    display:grid;
+}
+
+.grid-inner{
+    margin:auto;
+}
+
+.p-box{
+    background-color: pink;
+    height:500px;
+    margin-top:40px;
+    position:relative;
+    background-image: url('../img/city.jpg');
+    background-position:100px 200px;
+    background-position:center center;
+    color:white;
+}
+
+.p-box h1{
+    position:absolute;
+    top:40px;
+    left:40px;
+}
+
+.myul li:first-child{
+    background-color: red;
+}
+
+.myul li:last-child{
+    background-color: green;
+}
+
+.myul li:nth-child(4){
+    background-color: yellow;
+}
+
+.myul li:nth-child(even){
+    color:blue;
+}
+
