@@ -1,0 +1,565 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="test1css.css">
+    <style type="text/css">
+        *{
+        padding:0;
+        margin:0;
+        font-family: Arial, Helvetica, sans-serif;
+        border:0.1px solid black;
+        }
+        .container{
+            width:90%;
+            margin:auto;
+        }
+        .clr{
+            clear:both
+        }
+        a:hover{
+            color:red
+        }
+        a:visited{
+            color:darkmagenta
+        }
+        a:active{
+            color:forestgreen;
+        }
+        li:first-child{
+            font-size:x-large;
+        }
+        li:last-child{
+            font-size:x-large;
+        }
+        li:nth-child(even){
+            background-color: gray;
+        }
+        .grid div{
+            background-color:green;
+        }
+        .grid div:nth-child(odd){
+            background-color:darkgoldenrod;
+        }
+        @media(min-width:768px){
+            .container2{
+                display:flex;
+                flex-wrap:wrap;
+            }
+        }
+        .clearfix::after{
+            display:table;
+            content:'';
+            clear:both;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="color:green">Test1</h1>
+    </div>
+
+    <div class="container">
+        <div style="
+                display:grid; 
+                min-height:5rem;
+                text-align: center;
+                background-color: darkgray;
+                ">
+            <p style="
+                margin:auto;
+                overflow: hidden;
+                font-weight: bold;
+                line-height:2rem;
+                letter-spacing:0.5em;
+                ">
+            d ullamco eiusmod duis amet irure nostrud cillum qui nisi in     d ullamco eiusmod duis amet irure .</p>
+            <p style="
+                text-decoration: underline;
+                text-transform: uppercase;
+                font-weight:800;
+                word-spacing:2em;
+            ">
+            d ullamco eiusmod duis amet irure nostrud cillum qui nisi in     d ullamco eiusmod duis amet irure .</p>
+            <p style="
+                font-size:1.5rem;
+                font-weight:bold;
+                
+            ">
+            d ullamco eiusmod duis amet irure nostrud cillum qui nisi in     d ullamco eiusmod duis amet irure .</p>
+        </div>
+    </div>
+
+    <div class="container" style="min-height: 300px">
+        <img src="../img/logo_brush.png" alt="" style="float:left; margin-right:1em;">
+        <img src="../img/logo_css.png" alt="" style="float:left; margin-right:1em;">
+        <p>Occaecat incididunt in id deserunt minim esse. Magna mollit ut aliquip mollit ullamco velit. Duis consectetur est ut velit. Cillum non magna adipisicing in nisi consequat laborum. Elit Eiusmod consequat veniam duis est labore dolore proident enim consectetur exercitation. Ex aute et occaecat magna ex duis ea est nulla aliqua. Elit et aliquip elit sint ex nostrud sunt excepteur dolore commodo laborum siConsectetur consequat aliquip esse amet aliqua exercitation culpa est ut id magna reprehenderit aliquip. Velit laboris et est dolor enim dolore irure sunt esse proident nostrud nulla adipisicing. Laboris incididunt aliquip excepteur nostrud. Ullamco non ea cillum laboris eu non cupidatat tempor amet consequat ex incididunt nulla nostrud. Dolor est dolore nulla minim amet.t.consectetur nostrud anim non ea.</p>
+    </div>
+ 
+    <div class="container clearfix" >
+        <p style="width:30%; float:left">Deserunt irure cupidatat nostrud cillum. Commodo magna officia ut aliquip pariatur non culpa aliqua aliquip tempor. Tempor commodo voluptate ad eiusmod sit tempor occaecat aliqua irure laborum duis. Laborum occaecat labore consectetur consectetur aliquip exercitation.</p>
+        <p style="width:30%; float:left">Esse ipsum cillum culpa eu. Dolore in anim eiusmod sint ut voluptate occaecat ipsum sit velit. Mollit consequat eu elit veniam incididunt sint eu non. Exercitation ex ipsum voluptate qui ex. Officia sunt nulla exercitation anim culpa. Nisi voluptate reprehenderit quis consectetur excepteur ad Lorem in. Excepteur sunt deserunt culpa enim aliquip nostrud velit labore dolor occaecat amet.</p>
+        <p style="width:30%; float:left">Nostrud voluptate ad cillum ipsum. Ad deserunt id qui est commodo commodo ipsum laboris aliqua officia dolore esse id duis. Id ipsum. Ad deserunt id qui est commodo commodo ipsum laboris aliqua officia dolore esse id duis. Id ut mollit mollit sint.</p>
+    </div>
+
+    <div class="container">
+        <div style="
+                min-height: 20rem;
+                display:grid;
+                place-items: center;
+                background-image: url('../img/city.jpg');
+                background-size:cover;
+                ">
+            <div style="
+                width:50%;
+                text-align: center;
+                position:relative;
+                border:red 5px dotted;
+                border-radius: 30%;
+                ">
+                <img src="../img/logo_html.png" alt="">
+                <h1 style="
+                    position:absolute;
+                    top:50%;
+                    right:50%;
+                    transform: translateX(50%) translateY(-50%)
+                    
+                ">Grid</h1>
+                <p style="color:white">Enim id officia nostrud laborum.</p>
+            </div>
+            <div>
+                <a href="" type=button style="
+                    background-color: red;
+                    color:white;
+                    padding:10px;
+                    position:fixed;
+                    right:100px;
+                    top:200px;
+                ">OK</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div style="
+                min-height: 20rem;
+                display:grid;
+                place-items:center;
+                
+                ">
+            <div style="
+                width:70%;          
+                display:grid;
+                grid-template-columns: 1fr 1fr;
+                ">
+                <div style="
+                    text-align: center;
+                    ">
+                    <img src="../img/logo_html.png" alt="">
+                    <h1>Grid</h1>
+                    <p>Enim id officia nostrud laborum.</p>
+                </div>
+                <div style="
+                    text-align: right;
+                    ">  
+                    <img src="../img/logo_html.png" alt="">
+                    <h1 style="text-align:left">Grid</h1>
+                    <p>Enim id officia nostrud laborum.</p>
+                </div>
+                <div class="clr"></div>
+            </div>    
+        </div>
+    </div>
+
+    <div class="container">
+        <div style="
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                min-height: 20rem;
+                background-image: url('../img/street.jpg');
+                background-position:center center;
+                color:white;
+            ">
+            <div style="
+                width:90%;
+                display:grid;
+                grid-template-columns: 1fr 1fr;
+            ">
+                <div style="
+                    text-align: right;
+                ">
+                    <img src="../img/logo_html.png" alt="">
+                    <h1>Grid</h1>
+                    <p>Enim id officia nostrud laborum.</p>
+                </div>
+                <div style="
+                    text-align: center;
+                ">
+                    <img src="../img/logo_html.png" alt="">
+                    <h1>Grid</h1>
+                    <p>Enim id officia nostrud laborum.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div style="
+            float:left;
+            width:33.3%;
+            box-sizing: border-box;
+            text-align: center;
+            padding:10px;
+        ">
+            <h3>Heading</h3>
+            <p>Id ut nulla adipisicing exercitation sit.</p>
+        </div>
+        <div style="
+            float:left;
+            width:33.3%;
+            box-sizing: border-box;
+            padding:10px;
+        ">
+            <h3>Heading</h3>
+            <p>Id ut nulla adipisicing exercitation sit.</p>
+        </div>
+        <div style="
+            float:left;
+            width:33.3%;
+            box-sizing: border-box;
+            padding:10px;
+        ">
+            <h3>Heading</h3>
+            <p>Id ut nulla adipisicing exercitation sit.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <ul style="
+            list-style: none;
+            padding-left:200px;
+        ">
+            <li style="padding:0 2em; display:inline"><a href="#">item1</a></li>
+            <li style="padding:0 2em; display:inline"><a href="#">item2</a></li>
+            <li><a href="#" 
+                    onMouseOver="this.style.color='green'"
+                    onMouseOut="this.style.color='pink'"
+                >item3</a></li>
+            <li><a href="#">item4</a></li>
+            <li style="
+                list-style-image: url('../img/logo_html.png')
+            ">
+            </li>
+            <li><a href="#">item6</a></li>
+        </ul>
+    </div>
+
+    <div style="
+        margin-top:20px;
+    " 
+    class="container">
+        <form action="">
+            <div>
+                <label style="
+                    display:block;
+                    font-size: x-large;
+                " for="">Name</label>
+                <input style="
+                    width:100%;
+                    height:2rem;
+                    background-color:coral;
+                " type="text">
+            </div>
+            <div>
+                <label style="
+                    display:block;
+                    font-size:x-large;
+                " for="">Email</label>
+                <input style="
+                    width:100%;
+                    height:2rem;
+                    background-color: coral;
+                " type="email">
+            </div>
+            <div>
+                <label style="
+                    display:block;
+                    font-size:x-large;
+                " for="">Message</label>
+                <textarea style="
+                    width:100%;
+                    height:3rem;
+                    background-color: coral;
+                "name=""></textarea>
+            </div>
+            <button style="
+                width:100%;
+                font-size:xx-large;
+            ">Submit</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <div style="
+            display:grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-auto-rows:minmax(100px,auto);
+            grid-gap:1rem;
+            background-color: cornflowerblue;
+        ">
+            <div style="
+                grid-column:1/3;
+            ">box1/3</div>
+            <div style="
+                grid-column:3/4;
+            ">box3/4</div>
+            <div style="
+                grid-column:1/2;
+            ">box1/2</div>
+            <div style="
+                grid-column:2/4;
+            ">box2/4</div>
+            <div style="
+                grid-column:1/2
+            ">box1/2</div>
+            <div style="
+                grid-column:2/3
+            ">box2/3</div>
+            <div style="
+                grid-column:3/4
+            ">box3/4</div>
+        </div>
+    </div>
+    <div class="container">
+        <div style="
+            margin-top:30px;
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 2fr 1fr;
+            grid-gap:1rem;
+            background-color: yellow;
+        ">
+            <div>box1</div>
+            <div>box2</div>
+            <div>box3</div>
+            <div>box4</div>
+            <div>Eiusmod occaecat do magna nulla deserunt tempor ut ipsum amet officia. Lorem mollit laboris enim et. Dolore dolore supsum anim culpa est aute est sint. Non Lorem ipsum amet cillum et sunt exercitation dolor..</div>
+            <div>box6</div>
+            <div>box7</div>
+            <div>box8</div>
+            <div>box9</div>
+        </div>
+    </div>
+
+    <div class="container">
+            <div style="
+                margin-top:30px;
+                display:grid;
+                grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+                grid-gap:1rem;
+                background-color: orange;
+            ">
+                <div>box1</div>
+                <div>box2</div>
+                <div>box3</div>
+                <div>box4</div>
+                <div>Eiusmod occaecat do magna nulla deserunt tempor ut ipsum amet officia. Lorem mollit laboris enim et. Dolore dolore supsum anim culpa est aute est sint. Non Lorem ipsum amet cillum et sunt exercitation dolor..</div>
+                <div>box6</div>
+                <div>box7</div>
+                <div>box8</div>
+                <div>usmod occaecat do magna nulla deserunt tempor ut ipsum amet officia. Lorem mollit laboris enim et. Dolore dolore sups</div>
+            </div>
+        </div>
+    
+    <div class="container" style="margin-top:20px">
+        <div class="grid" style="
+            display:grid;
+            grid-template-columns: 20% 60%;
+            grid-auto-rows:minmax(100px,auto);
+            grid-column-gap:1rem;
+            grid-row-gap:1rem;
+            justify-items:stretch;
+            align-items:stretch;
+            background-color: burlywood;
+        ">
+        <div style="align-self: start">box1</div>
+        <div style="align-self: end">box2</div>
+        <div style="justify-self: end">box3</div>
+        <div style="justify-self: center">box4</div>
+        <div>box5</div>
+        <div style="
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            text-align: center;
+        ">
+            <p>first</p>
+            <p>second</p>
+            <p>third</p>
+        </div>
+        <div style="
+            display:grid;
+            grid-template-rows: 1fr 1fr;
+            padding:10px;
+            text-align: center;
+        ">
+            <p>aaaaa</p>
+            <p>bbbbb</p>
+        </div>
+
+        <div style="
+                display:flex; 
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+            ">
+            <p style="margin:10px; width:20%">Adipisicing occaecat conse.</p>
+            <p style="margin:10px; width:20%">Adipisicing occaecat consequat aute esse fugiat.</p>
+            <p style="margin:10px; width:30%">Adipisicing occaecat conssssequat Consequat duis est exercitation et nisi eiusmod dolore commodo eu ut ex.aute esse fugiat.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div style="
+            display:flex;
+            align-items:flex-end;
+            " >
+            <div style="flex:2; order:2">
+                <h3>Flex1</h3>
+                <p>Non culpa officia Lorem esse incididunt mollit amet ut.</p>
+            </div>
+            <div style="flex:1; order:1">
+                <h3>Flex2</h3>
+                <p>Non culpa officia Lorem esse incididunt mollit amet ut.</p>
+            </div>
+            <div style="flex:1; order:3">
+                <h3>Flex3</h3>
+                <p>Non culpa officia Lorem esse incididunt mollit amet ut.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div style="
+            display:flex;
+            align-items:center;
+            " >
+            <div style="flex:2; order:2">
+                <h3>Flex1</h3>
+                <p>Non culpa officia Lorem esse incididunt mollit amet ut.</p>
+            </div>
+            <div style="flex:1; order:1">
+                <h3>Flex2</h3>
+                <p>Non culpa officia Lorem esse incididunt mollit amet ut.</p>
+            </div>
+            <div style="flex:1; order:3">
+                <h3>Flex3</h3>
+                <p>Non culpa officia Lorem esse incididunt mollit amet ut.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div style="
+            display:flex;
+            align-items:stretch;
+            " >
+            <div style="flex:2; order:2">
+                <h3>Flex1</h3>
+                <p>Non culpa officia Lorem esse incididunt mollit amet ut.</p>
+            </div>
+            <div style="flex:1; order:1">
+                <h3>Flex2</h3>
+                <p>Non culpa officia Lorem esse incididunt mollit amet ut.</p>
+            </div>
+            <div style="flex:1; order:3">
+                <h3>Flex3</h3>
+                <p>Non culpa officia Lorem esse incididunt mollit amet ut.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div style="
+            display:flex;
+            flex-direction: column;
+            background-color: cornflowerblue;
+            " >
+            <div style="flex:2;">
+                <h3>Flex1</h3>
+                <p>Non culpa officia Lorem esse incididunt mollit amet ut.</p>
+            </div>
+            <div style="flex:1;">
+                <h3>Flex2</h3>
+                <p>Non culpa officia Lorem esse incididunt mollit amet ut.</p>
+            </div>
+            <div style="flex:1;">
+                <h3>Flex3</h3>
+                <p>Non culpa officia Lorem esse incididunt mollit amet ut.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div  style="
+            display:flex; 
+            justify-content:flex-end;
+        ;">
+            <div style="width:20%">
+                <h3>Flex1</h3>
+                <p>Non culpa officia Lorem esse incididunt mollit amet ut.</p>
+            </div>
+            <div style="width:20%">
+                <h3>Flex2</h3>
+                <p>Non culpa officia Lorem esse incididunt mollit amet ut.</p>
+            </div>
+            <div style="width:20%">
+                <h3>Flex3</h3>
+                <p>Non culpa officia Lorem esse incididunt mollit amet ut.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div  style="
+            display:flex; 
+            justify-content:center;
+            justify-content:space-between;
+        ;">
+            <div style="width:20%">
+                <h3>Flex1</h3>
+                <p>Non culpa officia Lorem esse incididunt mollit amet ut.</p>
+            </div>
+            <div style="width:20%">
+                <h3>Flex2</h3>
+                <p>Non culpa officia Lorem esse incididunt mollit amet ut.</p>
+            </div>
+            <div style="width:20%">
+                <h3>Flex3</h3>
+                <p>Non culpa officia Lorem esse incididunt mollit amet ut.</p>
+            </div>
+        </div>
+    </div>
+        
+    <div class="container2" style="margin-bottom:50px">
+        <p style="">Do ipsum et excepteur ut ipsum sit cillum nulla.</p>
+        <p style="">Do ipsum et excepteur ut ipsum sit cillum nulla.</p>
+        <p style="">Do ipsum et excepteur ut ipsum sit cillum nulla.</p>
+        <p style="">Do ipsum et excepteur ut ipsum sit cillum nulla.</p>
+        <p style="">Do ipsum et excepteur ut ipsum sit cillum nulla.</p>
+    </div>
+
+    <footer style="
+        display:grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        text-align:center;
+        align-items: center;
+    ">   
+        <h1 >Elit duie .</h1>
+        <div >Sit duis proident mAliquip laborum officia ipsum exercitation adipisicing ad elit exercitation incididunt sint amet magna magna. Ipcupidatat ea est eiusmod aliquip ad commodo proident consectetur anim Lorem Lorem tempor.inim non adipisicing deserunt laborum magna.</div>
+        <div >Elit du.</div>
+        <p style="grid-column: 1/-1">&copy;1999</p>
+    </footer>
+</body>
+</html>
