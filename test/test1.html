@@ -48,7 +48,7 @@
         @media(min-width:768px){
             .container2{
                 display:flex;
-                flex-wrap:wrap;
+                flex-wrap: wrap;
             }
         }
         .clearfix::after{
@@ -351,6 +351,19 @@
                     background-color: coral;
                 "name=""></textarea>
             </div>
+
+            <div>
+                <label style="display:block">Message Resizeable</label>
+                <textarea style="width:30%;
+                                 background-color: green;
+                                 font-size:1.3em;
+                                 resize:none;
+                                 overflow:hidden;
+                                 min-height:50px;
+                                 max-height:200px;
+                " onkeyup="auto_grow(this)"></textarea>
+            </div>
+
             <button style="
                 width:100%;
                 font-size:xx-large;
@@ -445,7 +458,10 @@
         <div style="align-self: end">box2</div>
         <div style="justify-self: end">box3</div>
         <div style="justify-self: center">box4</div>
-        <div>box5</div>
+        <div style="display:grid;
+                    place-items:center">
+            <p>ok</p>
+        </div>
         <div style="
             display:grid;
             grid-template-columns: 1fr 1fr 1fr;
@@ -461,8 +477,8 @@
             padding:10px;
             text-align: center;
         ">
-            <p>aaaaa</p>
-            <p>bbbbb</p>
+            <p >aaaaa</p>
+            <p >bbbbb</p>
         </div>
 
         <div style="
@@ -541,10 +557,11 @@
             display:flex;
             flex-direction: column;
             background-color: cornflowerblue;
+            align-items: start;
             " >
             <div style="flex:2;">
                 <h3>Flex1</h3>
-                <p>Non culpa officia Lorem esse incididunt mollit amet ut.</p>
+                <p>1Non culpa officia Lorem esse incididunt mollit amet ut.</p>
             </div>
             <div style="flex:1;">
                 <h3>Flex2</h3>
@@ -610,7 +627,12 @@
         <img src="../img/city.jpg" alt="">
     </section>
 
-    <section class="portfolio">
+    <section 
+             style="display:grid;
+                    grid-gap:1em;
+                    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+                    margin:1em 0 1em 0;
+    ">
             <img src="https://source.unsplash.com/random/200x200" alt="">
             <img src="https://source.unsplash.com/random/201x200" alt="">
             <img src="https://source.unsplash.com/random/202x200" alt="">
@@ -664,7 +686,7 @@
         <div style="text-align: center">
             <h4>Pro Membership</h4>
             <p class="price">$299/month</p>
-            <a href="" class="btn">Buy Now</a>
+            <a href="">Buy Now</a>
         </div>
     </section>
     <section class="container" 
@@ -680,22 +702,22 @@
         <div>
             <p>Dolore occaecat nisi nisi minim esse non do ipsum non. Cillum veniam anim Lorem veniam et anim </p>
         </div>
-        <div class="need-center-withgrid">
+        <div >
                 <p>Dolore occaecat nisi nisi minim esse non do ipsum non. Cillum veniam anim Lorem veniam et anim Labore occaecat ipsum aliqua duis deserunt nulla Lorem commodo sunt elit amet consectetur eu. Commodo quis enim qui dolore laboris cupidatat quis adipisicing qui ipsum occaecat aute magna labore. Quis aliqua in aliquip eiusmod. </p>            
         </div>
-        <div class="need-center-withgrid">
+        <div >
                 <p>Dolore occaecat nisi nisi minim esse non do ipsum non. Cillum veniam anim Lorem veniam et anim </p>
         </div>
-        <div class="need-center-withgrid">
+        <div>
             
                 <p>Dolore occaecat nisi nisi minim esse non do ipsum non. Cillum veniam anim Lorem veniam et anim </p>
             
             </div>
-            <div class="need-center-withgrid">
+            <div>
                     <p>Dolore occaecat nisi nisi minim esse non do ipsum non. Cillum veniam anim Lorem veniam et anim </p>            
                 
             </div>
-            <div class="need-center-withgrid">
+            <div>
                     <p>Dolore occaecat nisi nisi minim esse non do ipsum non. Cillum veniam anim Lorem veniam et anim </p>
             </div>
     </section>
@@ -703,7 +725,9 @@
             style=" display:grid;
                     grid-template-columns: 1fr 1fr 1fr;
                     place-items:center;
-                    min-height: 10rem;"
+                    min-height: 10rem;
+                    background-color: grey;
+                    "
     >
         <div style="text-align: center; padding:20px;">
             <i class="fas fa-chart-pie fa-2x"></i>
@@ -734,5 +758,13 @@
         <div >Elit du.</div>
         <p style="grid-column: 1/-1">&copy;1999</p>
     </footer>
+
+    <script>
+        function auto_grow(element) {
+            element.style.height = "5px";
+            element.style.height = (element.scrollHeight)+"px";
+        }
+    
+    </script>
 </body>
 </html>
