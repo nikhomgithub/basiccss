@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <style type="text/css">
+        *{
+            padding:0;
+            margin:0;
+            border:black 0.02px solid;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .clr{
+
+            clear:both;
+        }
+        .container{
+            width:80%;
+            margin: auto;
+        }
+        .clearfix::after{
+            display:table;
+            content:'';
+            clear:both;
+        }
+        @media(min-width:768px){
+            .container2{
+                margin:auto; 
+                width:90%; 
+                display:grid; 
+                grid-template-columns: 1fr 1fr; 
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <div>
+                <label style="display:block">Name</label>
+                <input type="email" 
+                       style="width:100%;                       min-height:10px;"/>
+
+            </div>
+            <div>
+                <label style="display:block">Email</label>
+                <input style="width:100%" type="text"/>
+            </div>
+            <div>
+                <label style="display:block">Message</label>
+                <textarea style="width:100%;
+                                 resize:none;
+                                 overflow:hidden;
+                                 min-height:50px;
+                                 max-height:100px;
+                " onkeyup="auto_grow(this)"></textarea>
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <script>
+        function auto_grow(element) {
+            element.style.height = "5px";
+            element.style.height = (element.scrollHeight)+"px";
+        }
+    
+    </script>
+
+</body>
+</html>
