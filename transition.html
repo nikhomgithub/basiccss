@@ -1,1 +1,75 @@
-s
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>CSS Transitions</title>
+
+  <style>
+        body {
+        background: #333;
+      }
+
+      .box{
+        background: white;
+        width: 300px;
+        height: 300px;
+        position: relative;
+        margin: auto;
+        top: 200px;
+        /* transition-property: background, border-radius, transform; */
+        transition-property: all;
+        transition-duration: 1s;
+        /* transition-delay: 2s, 4s; */
+        transition-timing-function: ease-in;
+      }
+
+      .box:hover{
+        background: red;
+        border-radius: 50%;
+        transform: rotateY(180deg);
+      }
+
+      /* 
+      TRANSITIONAL PROPERTIES
+      -Properties that have an identifiable halfway point
+
+      background-color 
+      background-position 
+      border-color 
+      border-width 
+      border-spacing 
+      bottom 
+      color
+      font-size 
+      font-weight 
+      height left 
+      letter-spacing 
+      line-height 
+      margin 
+      max-height 
+      max-width 
+      min-height 
+      min-width 
+      opacity 
+      outline-color 
+      outline-offset 
+      outline-width 
+      padding right 
+      text-indent 
+      text-shadow 
+      top 
+      vertical-align 
+      visibility 
+      width 
+      word-spacing 
+      z-index */
+  </style>
+
+</head>
+<body>  
+  <div class="box"></div>
+</body>
+</html>
