@@ -12,6 +12,14 @@
             font-family: Arial, Helvetica, sans-serif;
             border:black 0.02px solid;
         }
+        textarea {
+            resize: none;
+            overflow: hidden;
+            min-height: 50px;
+            max-height: 100px;
+        }
+        
+        
     </style>
 
 </head>
@@ -137,9 +145,17 @@
             </div>
             <input type="submit" value="Submit"/>
             <button>Submit</button>
+            
+            <textarea onkeyup="auto_grow(this)"></textarea>
+        
+        
         
     </form>
-
-
+<script>
+    function auto_grow(element) {
+        element.style.height = "5px";
+        element.style.height = (element.scrollHeight)+"px";
+    }
+</script>
 </body>
 </html>
